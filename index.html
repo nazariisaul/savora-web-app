@@ -20,7 +20,50 @@
     <title>Savora</title>
   </head>
   <body>
-    <div id="app"></div>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- Burger menu for mobile phone -->
+        <button type="button" class="btn-menu" aria-label="Open menu">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./public/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <!-- Logo -->
+
+        <a href="./index.html" class="logo">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./public/icons.svg#icon-logo"></use>
+          </svg>
+          <span class="logo-text">Savora</span>
+        </a>
+
+        <!-- Desktop nav menu -->
+        <nav class="desktop-nav">
+          <ul class="desktop-nav-list">
+            <li>
+              <a href="#recipes" class="desktop-nav-link active">Recipes</a>
+            </li>
+            <li><a href="#planner" class="desktop-nav-link">Planner</a></li>
+            <li><a href="#list" class="desktop-nav-link">List</a></li>
+            <li>
+              <a href="#favourites" class="desktop-nav-link">Favourites</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Buttons -->
+        <div class="header-btn">
+          <button type="button" class="favourite-btn">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="./public/icons.svg#icon-heart"></use>
+            </svg>
+          </button>
+          <button type="btn btn-primary btn-signin">Sign in</button>
+        </div>
+      </div>
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
