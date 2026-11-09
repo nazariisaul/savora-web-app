@@ -22,7 +22,7 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="container">
+      <div class="container header-container">
         <!-- Burger menu for mobile phone -->
         <button type="button" class="btn-menu" aria-label="Open menu">
           <svg width="24" height="24" aria-hidden="true">
@@ -54,16 +54,52 @@
         </nav>
 
         <!-- Buttons -->
-        <div class="header-btn">
+        <div class="header-actions">
           <button type="button" class="favourite-btn">
             <svg width="24" height="24" aria-hidden="true">
               <use href="./public/icons.svg#icon-heart"></use>
             </svg>
           </button>
-          <button type="btn btn-primary btn-signin">Sign in</button>
+          <button type="button" class="btn btn-primary btn-signin">
+            Sign in
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <p class="badge badge-orange">Weekly menu, no chaos</p>
+          <h1 class="hero-title">What are we cooking this week?</h1>
+          <p class="hero-subtitle">
+            Find a recipe, drop it into your weekly plan, and we will build the
+            shopping list for you.
+          </p>
+          <form role="search" class="hero-search-form">
+            <div class="search-input-wrapper">
+              <svg
+                width="20"
+                height="20"
+                aria-hidden="true"
+                class="search-icon"
+              >
+                <use href="./public/icons.svg#icon-search"></use>
+              </svg>
+              <input
+                type="search"
+                class="hero-search-input"
+                placeholder="Try: pasta, salad"
+                aria-label="Search recipes"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
