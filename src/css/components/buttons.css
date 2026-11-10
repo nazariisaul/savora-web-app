@@ -1,0 +1,36 @@
+/* Btn */
+
+.btn {
+}
+.btn-primary {
+}
+.btn-signin {
+}
+
+/* Round btn */
+
+.btn-icon-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap-size);
+  height: var(--tap-size);
+  padding: 0;
+  border-radius: var(--radius-full);
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+.btn-icon-round:hover {
+  background-color: var(--color-primary-soft);
+  border-color: var(--color-primary);
+}
+
+.btn-icon-round.is-liked {
+  color: var(--color-accent);
+}
