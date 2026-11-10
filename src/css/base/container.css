@@ -1,6 +1,12 @@
 .container {
-  max-width: 390px;
-  min-width: 320px;
+  width: 100%;
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 10px 16px;
+  padding: 0 var(--container-padding);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 24px;
+  }
 }
