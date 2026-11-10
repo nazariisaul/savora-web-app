@@ -45,8 +45,7 @@
   color: var(--color-primary);
 }
 
-.desktop-nav,
-.btn {
+.desktop-nav {
   display: none;
 }
 

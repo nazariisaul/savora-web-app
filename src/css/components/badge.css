@@ -1,0 +1,12 @@
+.badge {
+  align-self: flex-start;
+  background: var(--color-accent-soft);
+  color: #9a3412;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+
+.badge-orange {
+}

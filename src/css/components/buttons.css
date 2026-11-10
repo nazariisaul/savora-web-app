@@ -2,9 +2,34 @@
 
 .btn {
 }
+
 .btn-primary {
 }
+
 .btn-signin {
+  display: none;
+}
+
+/* Hero btn search */
+.btn-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap-size);
+  padding: 0 var(--space-6);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn-search:hover {
+  background-color: var(--color-primary-hover);
 }
 
 /* Round btn */
