@@ -16,4 +16,5 @@
 /* All sections */
 @import url(./layout/header.css);
 @import url(./layout/hero.css);
+@import url(./layout/filter.css);
 @import url(./layout/footer.css);
