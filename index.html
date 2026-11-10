@@ -47,7 +47,7 @@
               <a href="#recipes" class="desktop-nav-link active">Recipes</a>
             </li>
             <li><a href="#planner" class="desktop-nav-link">Planner</a></li>
-            <li><a href="#list" class="desktop-nav-link">List</a></li>
+            <li><a href="#list" class="desktop-nav-link">Shopping list</a></li>
             <li>
               <a href="#favourites" class="desktop-nav-link">Favourites</a>
             </li>
@@ -74,111 +74,161 @@
     <!-- Main -->
 
     <main>
-      <!-- Hero section -->
-      <section id="hero" class="hero-section">
-        <div class="container hero-container">
-          <p class="badge badge-orange">Weekly menu, no chaos</p>
-          <h1 class="hero-title">What are we cooking this week?</h1>
-          <p class="hero-subtitle">
-            Find a recipe, drop it into your weekly plan, and we will build the
-            shopping list for you.
-          </p>
-          <form role="search" class="hero-search-form">
-            <div class="search-input-wrapper">
-              <svg
-                width="20"
-                height="20"
-                aria-hidden="true"
-                class="search-icon"
-              >
-                <use href="./icons.svg#icon-search"></use>
-              </svg>
-              <input
-                type="search"
-                class="hero-search-input"
-                placeholder="Try: pasta, salad"
-                aria-label="Search recipes"
-              />
-            </div>
-            <button type="submit" class="btn btn-primary btn-search">
-              Search
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <!-- Filter section -->
-
-      <section id="filter" class="filter-section">
-        <div class="container filter-container">
-          <div class="filter-categories-wrapper">
-            <ul class="filter-categories-list">
-              <li>
-                <button type="button" class="filter-category-btn active">
-                  All
-                </button>
-              </li>
-              <li>
-                <button type="button" class="filter-category-btn">
-                  Breakfast
-                </button>
-              </li>
-              <li>
-                <button type="button" class="filter-category-btn">Lunch</button>
-              </li>
-              <li>
-                <button type="button" class="filter-category-btn">
-                  Dinner
-                </button>
-              </li>
-              <li>
-                <button type="button" class="filter-category-btn">Snack</button>
-              </li>
-              <li>
-                <button type="button" class="filter-category-btn">
-                  Dessert
-                </button>
-              </li>
-            </ul>
+      <!-- Recipes page-->
+      <div id="view-recipes" class="view">
+        <!-- Hero section -->
+        <section id="hero" class="hero-section">
+          <div class="container hero-container">
+            <p class="badge badge-orange">Weekly menu, no chaos</p>
+            <h1 class="hero-title">What are we cooking this week?</h1>
+            <p class="hero-subtitle">
+              Find a recipe, drop it into your weekly plan, and we will build
+              the shopping list for you.
+            </p>
+            <form role="search" class="hero-search-form">
+              <div class="search-input-wrapper">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  class="search-icon"
+                >
+                  <use href="./icons.svg#icon-search"></use>
+                </svg>
+                <input
+                  type="search"
+                  class="hero-search-input"
+                  placeholder="Try: pasta, salad"
+                  aria-label="Search recipes"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-search">
+                Search
+              </button>
+            </form>
           </div>
+        </section>
 
-          <!-- Sorted by -->
+        <!-- Filter section -->
 
-          <div class="filter-actions">
-            <div class="filter-sort-wrapper">
-              <select class="filter-sort-select" aria-label="Sort recipes by">
-                <option value="rating">Sort by: Rating</option>
-                <option value="popular">Sort by: Popular</option>
-                <option value="newest">Sort by: Newest</option>
-              </select>
+        <section id="filter" class="filter-section">
+          <div class="container filter-container">
+            <div class="filter-categories-wrapper">
+              <ul class="filter-categories-list">
+                <li>
+                  <button type="button" class="filter-category-btn active">
+                    All
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="filter-category-btn">
+                    Breakfast
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="filter-category-btn">
+                    Lunch
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="filter-category-btn">
+                    Dinner
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="filter-category-btn">
+                    Snack
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="filter-category-btn">
+                    Dessert
+                  </button>
+                </li>
+              </ul>
             </div>
 
-            <button
-              type="button"
-              class="more-filters-btn"
-              aria-label="Open more filters"
-            >
-              <svg
-                width="24"
-                height="24"
-                aria-hidden="true"
-                class="filter-btn-icon"
+            <!-- Sorted by -->
+
+            <div class="filter-actions">
+              <div class="filter-sort-wrapper">
+                <select class="filter-sort-select" aria-label="Sort recipes by">
+                  <option value="rating">Sort by: Rating</option>
+                  <option value="popular">Sort by: Popular</option>
+                  <option value="newest">Sort by: Newest</option>
+                </select>
+              </div>
+
+              <button
+                type="button"
+                class="more-filters-btn"
+                aria-label="Open more filters"
               >
-                <use href="./icons.svg#icon-sliders"></use>
-              </svg>
-            </button>
+                <svg
+                  width="24"
+                  height="24"
+                  aria-hidden="true"
+                  class="filter-btn-icon"
+                >
+                  <use href="./icons.svg#icon-sliders"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <!-- Planner page-->
+
+      <div id="view-planner" class="view" hidden>
+        <section class="planner-section"></section>
+      </div>
+
+      <!-- List page-->
+
+      <div id="view-list" class="view" hidden>
+        <section class="shopping-section">…</section>
+      </div>
+
+      <!-- Favourite page-->
+
+      <div id="view-favourites" class="view" hidden>
+        <section class="favourites-section">…</section>
+      </div>
     </main>
 
     <!-- Footer -->
 
     <footer id="footer">
-      <h2 class="footer-title">Savora</h2>
-      <p class="footer-descr">
-        A portfolio pet project. Recipe data provided by DummyJSON.
-      </p>
+      <div class="container">
+        <!--  -->
+        <div class="footer-main">
+          <a href="/" class="footer-text-logo">Savora</a>
+          <p class="footer-descr-text">
+            Recipes, a weekly menu and a shopping list in one place.
+          </p>
+        </div>
+
+        <!--  -->
+
+        <nav class="footer-nav">
+          <p class="footer-subtitle">Navigate</p>
+          <ul class="footer-nav-list">
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#planner">Planner </a></li>
+            <li><a href="#list">Shopping list</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--  -->
+
+      <div class="footer-descr">
+        <p class="footer-subtitle">About</p>
+        <p class="footer-descr-text">
+          A portfolio pet project. Recipe data provided by DummyJSON.
+        </p>
+      </div>
     </footer>
 
     <!-- Mobile bottom nav menu -->
@@ -232,7 +282,7 @@
       >
         <!-- Header mobile menu -->
         <div class="mobile-menu-header">
-          <a href="./index.html" class="logo logo-mobile-menu">
+          <a href="/" class="logo logo-mobile-menu">
             <svg width="24" height="24" aria-hidden="true" class="logo-icon">
               <use href="./icons.svg#icon-logo"></use>
             </svg>
