@@ -8,5 +8,26 @@
   border-radius: var(--radius-full);
 }
 
+/* Mobsle menu */
+.menu-badge {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--radius-full);
+  font-size: var(--fs-caption);
+  font-weight: 600;
+}
+
+.badge-green {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
 .badge-orange {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent);
 }

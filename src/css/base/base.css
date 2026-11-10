@@ -6,6 +6,7 @@
 
 body {
   padding-bottom: var(--space-16);
+  font-family: var(--font-body);
 }
 
 /* Global styles */

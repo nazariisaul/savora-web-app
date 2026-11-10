@@ -60,7 +60,10 @@
               <use href="./public/icons.svg#icon-heart"></use>
             </svg>
           </button>
-          <button type="button" class="btn btn-primary btn-signin">
+          <button
+            type="button"
+            class="btn btn-primary btn-signin btn-mob-header"
+          >
             Sign in
           </button>
         </div>
@@ -218,76 +221,97 @@
 
     <!-- Mobile menu -->
 
-    <div class="backdrop">
-      <div class="modal">
+    <div class="backdrop is-open">
+      <div class="mobile-menu">
+        <!-- Header mobile menu -->
         <div class="mobile-menu-header">
-          <a href="./index.html" class="logo">
-            <svg width="24" height="24" aria-hidden="true">
+          <a href="./index.html" class="logo logo-mobile-menu">
+            <svg width="24" height="24" aria-hidden="true" class="logo-icon">
               <use href="./public/icons.svg#icon-logo"></use>
             </svg>
             <span class="logo-text">Savora</span>
           </a>
 
-          <button type="button" class="btn-m" aria-label="Close menu">
+          <button
+            type="button"
+            class="mobile-menu-close"
+            aria-label="Close menu"
+          >
             <svg width="24" height="24" aria-hidden="true">
-              <use href="./public/icons.svg#icon-menu"></use>
+              <use href="./public/icons.svg#icon-close"></use>
             </svg>
           </button>
+        </div>
 
-          <ul class="mobile-menu-list">
-            <li>
-              <a href="#recipes" class="mobile-menu-link"
-                ><svg width="24" height="24">
-                  <use href="./public/icons.svg#icon-book"></use>
-                </svg>
-                <span>Recipes</span></a
-              >
-            </li>
-            <li>
-              <a href="#planner" class="mobile-menu-link">
-                <svg width="24" height="24">
-                  <use href="./public/icons.svg#icon-calendar"></use>
-                </svg>
-                <span>Planner</span></a
-              >
-            </li>
-            <li>
-              <a href="#list" class="mobile-menu-link">
-                <svg width="24" height="24">
-                  <use href="./public/icons.svg#icon-cart"></use>
-                </svg>
-                <span>List</span></a
-              >
-            </li>
-            <li>
-              <a href="#favourites" class="mobile-menu-link">
-                <svg width="24" height="24">
-                  <use href="./public/icons.svg#icon-heart"></use>
-                </svg>
-                <span>Favourites</span></a
-              >
-            </li>
-            <li>
-              <a href="#favourites" class="mobile-menu-link">
-                <svg width="24" height="24">
-                  <use href="./public/icons.svg#icon-plus"></use>
-                </svg>
-                <span>Add recipe</span></a
-              >
-            </li>
-          </ul>
-
-          <div class="mobile-menu-footer">
-            <button type="button" class="btn btn-primary btn-signin">
-              <svg width="24" height="24">
-                <use href="./public/icons.svg#icon-user"></use>
+        <!-- Menu -->
+        <ul class="mobile-menu-list">
+          <li>
+            <a href="#recipes" class="mobile-menu-link active">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./public/icons.svg#icon-book"></use>
               </svg>
-              <span>Sign in</span>
-            </button>
-            <p class="mobile-menu-footer-descr">
-              A portfolio pet project. Recipe data provided by DummyJSON.
-            </p>
-          </div>
+              <span>Recipes</span>
+            </a>
+          </li>
+
+          <!--   -->
+
+          <li>
+            <a href="#planner" class="mobile-menu-link">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./public/icons.svg#icon-calendar"></use>
+              </svg>
+              <span>Planner</span>
+            </a>
+          </li>
+
+          <!--  -->
+
+          <li>
+            <a href="#list" class="mobile-menu-link">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./public/icons.svg#icon-cart"></use>
+              </svg>
+              <span>Shopping list</span>
+              <span class="menu-badge badge-green">11</span>
+            </a>
+          </li>
+
+          <!--  -->
+
+          <li>
+            <a href="#favourites" class="mobile-menu-link">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./public/icons.svg#icon-heart"></use>
+              </svg>
+              <span>Favorites</span>
+              <span class="menu-badge badge-orange">2</span>
+            </a>
+          </li>
+
+          <!--  -->
+
+          <li>
+            <a href="#add-recipe" class="mobile-menu-link">
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./public/icons.svg#icon-plus"></use>
+              </svg>
+              <span>Add recipe</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Footer mobile menu -->
+        <div class="mobile-menu-footer">
+          <button type="button" class="btn btn-primary btn-signin">
+            <svg width="20" height="20" aria-hidden="true">
+              <use href="./public/icons.svg#icon-user"></use>
+            </svg>
+            <span>Sign in</span>
+          </button>
+          <p class="mobile-menu-footer-descr">
+            A portfolio pet project. Recipe data provided by DummyJSON.
+          </p>
         </div>
       </div>
     </div>

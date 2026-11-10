@@ -1,4 +1,7 @@
 /* Mobile first */
+.btn-mob-header {
+  display: none;
+}
 
 .header-container {
   display: flex;
