@@ -21,11 +21,11 @@
   --color-info: #1d5f8a;
 
   /* ---------- Typography ---------- */
-  --font-heading: "Fraunces", Georgia, serif;
-  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
-  --fs-h1: 56px; /* line-height 1.1  (mobile: 36px) */
-  --fs-h2: 32px; /* line-height 1.25 (mobile: 26px) */
+  --fs-h1: 36px; /* line-height 1.1  (desktop: 56px) */
+  --fs-h2: 26px; /* line-height 1.25 (desktop: 32px) */
   --fs-h3: 20px; /* line-height 1.25 */
   --fs-body: 16px; /* line-height 1.5 */
   --fs-small: 14px; /* line-height 1.5 */
@@ -68,4 +68,11 @@
 
   /* ---------- Motion ---------- */
   --transition: 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-h1: 56px;
+    --fs-h2: 32px;
+  }
 }

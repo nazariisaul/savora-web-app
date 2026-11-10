@@ -1,4 +1,8 @@
 /* Mobile first */
+header {
+  background-color: var(--color-surface);
+}
+
 .btn-mob-header {
   display: none;
 }
@@ -6,31 +10,10 @@
 .header-container {
   display: flex;
   align-items: center;
-  background-color: var(--color-surface);
   justify-content: space-between;
   border-bottom: 1px solid var(--color-border);
   min-height: 64px;
   padding: 10px 8px;
-}
-
-.btn-menu {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--tap-size);
-  height: var(--tap-size);
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  color: currentColor;
-  transition: color var(--transition);
-}
-
-.btn-menu:hover {
-  background-color: var(--color-primary-soft);
-  border-color: var(--color-primary);
 }
 
 .logo {
@@ -45,16 +28,12 @@
   transition: color var(--transition);
 }
 
-.logo:hover {
-  color: var(--color-primary);
-}
-
 .desktop-nav {
   display: none;
 }
 
 .header-actions {
-  display: block;
+  display: flex;
   align-items: center;
 }
 
@@ -62,7 +41,4 @@
 }
 
 .desktop-nav-link {
-}
-
-.active {
 }

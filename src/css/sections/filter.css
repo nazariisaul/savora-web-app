@@ -16,6 +16,8 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: var(--space-2);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text-muted) var(--color-surface);
 }
 
 .filter-categories-wrapper::-webkit-scrollbar {
@@ -28,18 +30,18 @@
 }
 
 .filter-categories-wrapper::-webkit-scrollbar-thumb {
-  background: var(--color-text-muted);
+  background: color-mix(in srgb, var(--color-text-muted) 50%, transparent);
   border-radius: var(--radius-full);
-  opacity: 0.5;
-}
-
-.filter-categories-wrapper::-webkit-scrollbar-button {
-  display: none;
 }
 
 .filter-categories-wrapper {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-text-muted) var(--color-surface);
+  scrollbar-color: color-mix(in srgb, var(--color-text-muted) 50%, transparent)
+    var(--color-surface);
+}
+
+.filter-categories-wrapper::-webkit-scrollbar-button {
+  display: none;
 }
 
 .filter-categories-list {
@@ -47,7 +49,6 @@
   align-items: center;
   gap: var(--space-2);
   padding: 16px 0;
-  overflow-x: auto;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -102,17 +103,13 @@
   padding: 0 var(--space-4);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl); /* 16px згідно з вашим змінні-дизайном */
+  border-radius: var(--radius-xl);
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: var(--fs-small);
   font-weight: 500;
   outline: none;
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-
-  /* Кастомна стрілочка вниз */
   appearance: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235b665f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
   background-repeat: no-repeat;

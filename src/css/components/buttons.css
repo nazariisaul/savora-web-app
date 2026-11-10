@@ -1,33 +1,55 @@
 /* Btn */
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: var(--tap-size);
+  padding: 0 var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
 
 .btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--color-primary-active);
 }
 
 /* Hero btn search */
 .btn-search {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: var(--tap-size);
-  padding: 0 var(--space-6);
-  background-color: var(--color-primary);
-  color: var(--color-surface);
-  font-family: var(--font-body);
-  font-size: var(--fs-body);
-  font-weight: 600;
   border-radius: var(--radius-lg);
-  cursor: pointer;
-  transition: background-color var(--transition);
+  padding: 0 var(--space-4);
+  flex-shrink: 0;
 }
 
-.btn-search:hover {
-  background-color: var(--color-primary-hover);
+.btn-signin {
+  width: 100%;
 }
 
-/* Round btn */
+/* Round btn
 
 .btn-icon-round {
   display: inline-flex;
@@ -47,53 +69,34 @@
 
 .btn-icon-round:hover {
   background-color: var(--color-primary-soft);
-  border-color: var(--color-primary);
-}
+  border-color: var(--color-primary); }*/
 
 .btn-icon-round.is-liked {
   color: var(--color-accent);
 }
 
-/* Mobile Menu */
+/* Header btn */
 
-.mobile-menu-close {
+.btn-menu,
+.mobile-menu-close,
+.btn-icon-round {
   display: flex;
   align-items: center;
   justify-content: center;
   width: var(--tap-size);
   height: var(--tap-size);
   background: transparent;
-  color: #000;
-  border: 0;
   border-radius: var(--radius-full);
-  transition:
-    background-color var(--transition),
-    border-color var(--transition);
-}
-
-.mobile-menu-close:hover {
-  background-color: var(--color-primary-soft);
-  border-color: var(--color-primary);
-}
-
-.btn-signin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  width: 100%;
-  height: var(--tap-size);
-  background-color: var(--color-primary);
-  color: var(--color-surface);
-  border: none;
-  border-radius: var(--radius-lg);
-  font-family: var(--font-body);
-  font-size: var(--fs-body);
-  font-weight: 600;
+  border: 1px solid transparent;
+  color: var(--color-text);
   cursor: pointer;
-  transition: background-color var(--transition);
+  transition: var(--transition);
 }
 
-.btn-signin:hover {
-  background-color: var(--color-primary-hover);
+.btn-menu:hover,
+.mobile-menu-close:hover,
+.btn-icon-round:hover {
+  background-color: var(--color-primary-soft);
+  border-color: var(--color-border);
+  color: var(--color-primary);
 }
